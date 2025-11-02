@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int z, r= 0;
+    cin >> z;
+    while (z > 0) { r = r * 10 + z % 10; z /= 10; }
+    cout << r;
+    return 0;
+}
