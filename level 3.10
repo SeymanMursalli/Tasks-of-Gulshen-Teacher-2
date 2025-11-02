@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N, a1 = 0, a2 = 1, n;
+    cin >> N;
+    for (int i = 1; i <= N; i=i+1) {
+        cout << a1 << " ";
+        n = a1 + a2;
+        a1 = a2;
+        a2 = n;
+    }
+    return 0;
+}
